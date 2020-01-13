@@ -1,0 +1,192 @@
+/* These styles create the A4 sized page within a webpage */
+@media print {
+  body,
+  page[size="A4"] {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+body {
+  background: rgb(204, 204, 204);
+}
+#a4-page {
+  position: relative;
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto 0.5cm;
+  box-shadow: 0 0 1cm 4px black;
+}
+
+#left-container {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 5.3cm;
+  height: 100%;
+  background-color: #003d73;
+}
+
+#left-container #name {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 83%;
+}
+
+#left-container .topic-highlight {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2.5%;
+  background-color: #00315c;
+  margin-bottom: 10px;
+}
+
+#left-container .left-topic {
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-left: 19px;
+}
+
+#left-container .contact-box {
+  width: 80%;
+}
+
+#left-container .contact-head {
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#left-container .contact-info {
+  font-weight: normal;
+  font-family: Calibri, sans-serif;
+  color: white;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+.language-box {
+  width: 80%;
+}
+
+.bar-topic {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: white;
+  font-size: 16px;
+}
+
+.bar-background {
+  width: 100%;
+  background-color: #00315c;
+  margin-bottom: 25px;
+}
+
+.bar-1 {
+  width: 90%;
+  height: 12px;
+  background-color: white;
+}
+.bar-2 {
+  width: 80%;
+  height: 12px;
+  background-color: white;
+}
+.bar-3 {
+  width: 70%;
+  height: 12px;
+  background-color: white;
+}
+.bar-4 {
+  width: 60%;
+  height: 12px;
+  background-color: white;
+}
+.bar-5 {
+  width: 40%;
+  height: 12px;
+  background-color: white;
+}
+
+/* Content below is for the right container */
+#right-container {
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 15.7cm;
+  height: 100%;
+}
+
+#right-container > div {
+  width: 97%;
+  margin-bottom: 10px;
+}
+
+/* 16px Font Size is equivalent to 12pt Font */
+#right-container span,
+p,
+ul,
+li {
+  font-size: 16px;
+  font-family: Calibri, sans-serif;
+  margin: 0px;
+}
+
+#right-container .right-topic {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  border-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Calibri, sans-serif;
+  color: #00315c;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.sub-header {
+  font-weight: bold;
+}
+
+#description-box > p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#education-box > ul,
+#project-box ul {
+  list-style-position: inside;
+  padding: 0px;
+}
+
+#project-box > .project {
+  margin-bottom: 10px;
+  margin-right: 0px;
+  border-top: 1px solid grey;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+#project-box > .project-top {
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+.skill {
+  list-style-type: none;
+}
